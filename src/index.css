@@ -1,0 +1,13 @@
+
+* {
+  font-family: 'League Spartan', sans-serif;
+  margin: 0px;
+}
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+

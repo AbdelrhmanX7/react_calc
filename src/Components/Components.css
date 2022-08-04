@@ -1,0 +1,149 @@
+
+body {
+    background-color: hsl(222, 26%, 31%);
+    color: white;
+    transition: 0.5s;
+}
+.Main_Header {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.Main_Header > p {
+    font-size: 36px;
+    font-weight: 600;
+}
+.Theme_Changer {
+    width: 110px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.Theme_Changer > p {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+}
+.toggle_container {
+    width: 50px;
+}
+.toggle_numbers {
+    width: 55px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2px;
+}
+.toggle_numbers p {
+    margin: 0px;
+}
+.toggle_btn {
+    position: relative;
+    width: 50px;
+    height: 10px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px;
+    background-color: hsl(223, 31%, 20%);
+}
+.ball {
+    position: absolute;
+    left: 75%;
+    width: 10px;
+    height: 10px;
+    background-color: hsl(6, 63%, 50%);
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.toggle_btns {
+    height: 100%;
+    width: calc(100% / 3);
+    z-index: 1;
+    opacity: 0;
+}
+button:hover {
+    cursor: pointer;
+}
+.Results {
+    width: 510px; height: 120px;
+    display: flex;
+    justify-content: flex-end; align-items: center;
+    background-color: hsl(224, 36%, 15%);
+    border-radius: 10px;
+    padding: 12px 24px;
+    margin-top: 25px;
+    box-sizing: border-box;
+}
+.Results h1 {
+    font-weight: 600;
+    font-size: 46px;
+}
+.KeyBody {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 15px;
+    width: 510px;
+    height: 450px;
+    padding: 24px;
+    margin-top: 25px;
+    border-radius: 10px;
+    background-color: hsl(223, 31%, 20%);
+    box-sizing: border-box;
+}
+.KeyBody > button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    border: none;
+    font-size: 42px;
+    padding-top: 10px;
+    font-weight: 700;
+    border-radius: 10px;
+    box-shadow: 0px 5px 0px 0px hsl(30deg 8% 68%);
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(221, 14%, 31%);
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+.KeyBody > button:hover {
+    background-color: rgb(237 236 236);
+}
+.KeyBody > button:nth-of-type(4), .KeyBody > button:nth-of-type(17) {
+    color: white;
+    background-color: hsl(225, 21%, 49%);
+    box-shadow: 0px 5px 0px 0px  hsl(224, 28%, 35%);
+}
+.KeyBody > button:nth-of-type(4):hover, .KeyBody > button:nth-of-type(17):hover  {
+    background-color: hsl(225, 21%, 43%);
+}
+.KeyBody > button:nth-last-of-type(1) {
+    color: white;
+    background-color: hsl(6, 63%, 50%);
+    box-shadow: 0px 5px 0px 0px  hsl(6, 70%, 34%);
+}
+.KeyBody > button:nth-last-of-type(1):hover {
+    background-color: hsl(6, 61%, 46%);
+}
+.KeyBody > button:nth-last-of-type(1), .KeyBody > button:nth-last-of-type(2) {
+    grid-column: span 2;
+
+}
+@media screen and (max-width: 550px) {
+    .Main_Header {
+        width: 300px;
+    }
+    .Results {
+        width: 310px;
+    }
+    .KeyBody {
+        width: 310px; height: 350px; padding: 12px;
+    }
+    .KeyBody > button {
+        font-size: 25px;
+    }
+}
